@@ -1,4 +1,4 @@
-# MinecraftUUID
+# Minecraft UUID
 
 > Minecraft 的在线/离线 UUID 获取
 
