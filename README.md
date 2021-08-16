@@ -1,8 +1,13 @@
-MCDReforged Plugin Template
------
+# MinecraftUUID
 
-A template for MCDReforged (>=2.x) plugin
+> Minecraft 的在线/离线 UUID 获取
 
-Try `python -m mcdreforged pack` to generate the packed plugin!
+## API
 
-This template is under the CC0 license. Feel free to use it!
+`onlineUUID`：获取在线玩家的UUID
+
+`offlineUUID`：获取离线玩家的UUID
+
+`nameUUIDFromBytes`：就是 Java 里的 nameUUIDFromBytes 
+
+`checkPlayerName`：检测玩家名是否合法
