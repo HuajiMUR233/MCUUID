@@ -1,6 +1,3 @@
-# GPL-2.0 Only
-# Copyright (c) 2021 Huaji_MUR233
-
 from uuid import UUID
 import hashlib
 import json
