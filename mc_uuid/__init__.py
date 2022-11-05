@@ -12,10 +12,10 @@ def nameUUIDFromBytes(name: bytes) -> UUID:
     md5 = hashlib.md5()
     md5.update(name)
     md5Bytes = bytearray(md5.digest())
-    md5Bytes[6] &= 0x0F
-    md5Bytes[6] |= 0x30
-    md5Bytes[8] &= 0x3F
-    md5Bytes[8] |= 0x80
+    md5Bytes[6] &= 0x0F  # clear version
+    md5Bytes[6] |= 0x30  # set to version 3
+    md5Bytes[8] &= 0x3F  # clear variant
+    md5Bytes[8] |= 0x80  # set to IETF variant
     return UUID(bytes=bytes(md5Bytes))
 
 
